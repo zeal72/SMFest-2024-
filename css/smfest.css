@@ -144,7 +144,11 @@ body{
     color: white;
 }
 @media only screen and (max-width: 768px){
-        
+
+        .conference{
+            font-size: 13px;
+            font-weight: 600 !important;
+        }
     h1.previous, h1.previousa {
         font-size: 2rem;
     }
@@ -326,6 +330,12 @@ body{
     font-size: 16px;
 }
 @media only screen and (min-width: 768px){
+    
+.footer-content{
+    margin-bottom: 30px;
+    padding-bottom: 15%;
+    border-bottom: 1px solid rgb(52, 50, 50);
+}
     .third-section{
         margin-top: 200% !important;
     }
@@ -738,24 +748,30 @@ body{
     transition: all 0.4s ease-in-out;
     animation: glowing 0.9s infinite alternate;
 }
+.bi-play-fill {
+    cursor: pointer;
+    box-shadow: 0 0 10px #022a53;
+    transition: all 0.4s ease-in-out;
+    animation: glowing 0.9s infinite alternate;
+}
 @keyframes glowing {
     0% {
-        box-shadow: 0 0 5px #010c186a, 0 0 10px #012951, 0 0 20px #02182e, 0 0 30px #032a50, 0 0 40px #072039, 0 0 50px #042545, 0 0 60px #05284c;
+        box-shadow: 0 0 5px #0a53a26a, 0 0 10px #0a53a26a, 0 0 20px #053f79, 0 0 30px #032a50, 0 0 40px #072039, 0 0 50px #042545, 0 0 60px #05284c;
     }
     15% {
-        box-shadow: 0 0 5px #010c186a, 0 0 10px #012951, 0 0 20px #02182e, 0 0 30px #032a50, 0 0 40px #072039, 0 0 50px #042545, 0 0 60px #05284c;
+        box-shadow: 0 0 5px #010c186a, 0 0 10px #0a53a26a, 0 0 20px #02182e, 0 0 30px #032a50, 0 0 40px #072039, 0 0 50px #042545, 0 0 60px #05284c;
     }
     25% {
-        box-shadow: 0 0 10px #075454, 0 0 20px #075454, 0 0 30px #075454, 0 0 40px #075454, 0 0 50px #075454, 0 0 60px #075454, 0 0 70px #075454;
+        box-shadow: 0 0 10px #080459, 0 0 20px #1e0754, 0 0 30px #070d54, 0 0 40px #190444, 0 0 50px #075454, 0 0 60px #075454, 0 0 70px #075454;
     }
     45% {
-        box-shadow: 0 0 10px #075454, 0 0 20px #075454, 0 0 30px #075454, 0 0 40px #075454, 0 0 50px #075454, 0 0 60px #075454, 0 0 70px #075454;
+        box-shadow: 0 0 10px #210e9d, 0 0 20px #3a0aa9, 0 0 30px #110754, 0 0 40px #075454, 0 0 50px #075454, 0 0 60px #19066e, 0 0 70px #075454;
     }
     65% {
-        box-shadow: 0 0 5px #062c53, 0 0 10px #062c53, 0 0 20px #062c53, 0 0 30px #062c53, 0 0 40px #062c53, 0 0 50px #062c53, 0 0 60px #062c53;
+        box-shadow: 0 0 5px #062c53, 0 0 10px #062c53, 0 0 20px #062c53, 0 0 30px #290676, 0 0 40px #062c53, 0 0 50px #062c53, 0 0 60px #062c53;
     }
     100% {
-        box-shadow: 0 0 5px #062c53, 0 0 10px #062c53, 0 0 20px #062c53, 0 0 30px #062c53, 0 0 40px #062c53, 0 0 50px #062c53, 0 0 60px #062c53;
+        box-shadow: 0 0 5px #2c0575, 0 0 10px #480acd, 0 0 20px #2f0794, 0 0 30px #062c53, 0 0 40px #062c53, 0 0 50px #062c53, 0 0 60px #062c53;
     }
 }
 .ticket-section {
@@ -865,3 +881,155 @@ p .pink {
     letter-spacing: 1px;
     border-radius: 50%;
 }
+/* Keyframes for the wobble animation */
+@keyframes wobble {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-10px) rotate(-5deg);
+    }
+    50% {
+      transform: translateY(0) rotate(5deg);
+    }
+    75% {
+      transform: translateY(-10px) rotate(-5deg);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply the wobble animation on hover */
+  .social-media i{
+    transition: transform 0.2s ease;
+  }
+  
+  .social-media i   :hover {
+    animation: wobble 1s ease-in-out;
+  }
+  .footer-section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 150px;
+}
+.footer-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 0, 60, 0.9);
+    z-index: 1;
+}
+.footer-section .container-fluid {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 55px;
+    border-bottom: 1px solid var(--grey);
+}
+.footer-logo a img {
+    height: 12vh;
+    margin-bottom: 28px;
+}
+.conference {
+    color: rgb(167, 165, 165);
+    font-weight: 600;
+    font-family:'ClashDisplay-Semibold', Arial, sans-serif ;
+    margin-bottom: 25px;
+}
+.social-media i {
+    border-radius: 50%;
+    border: 1px solid gray;
+    color: grey;
+    padding:8px 10px;
+    display: inline ;
+    justify-content: center;
+    font-size: 17px;
+    text-align: center;
+    margin-right: 5px;
+}
+.links {
+    text-align: center;
+}
+.news {
+    text-align: center;
+}
+.newsletter {
+    font-family: 'ClashDisplay-Semibold', Arial, sans-serif;
+    color: var(--white);
+    font-size: 30px;
+    line-height: -10px;
+    /* letter-spacing: -1px; */
+    font-weight: 600;
+    margin-bottom: 35px;
+
+}
+.other-pages {
+    font-family: 'ClashDisplay-Semibold', Arial, sans-serif;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.pages {
+    font-family: 'ClashDisplay-Semibold', Arial, sans-serif;
+    font-size: 18px;
+    color: gray;
+    font-weight: 900;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.pages:hover{
+    color: #e62152;
+}
+.sign-up {
+    color: rgb(208, 203, 203);
+}
+.news input {
+    font-family: 'Poppins-Regular', Arial, sans-serif;
+    border-radius: 30px;
+    padding: 15px 20px;
+    border: none;
+    background: inherit;
+    border: 1px solid rgba(99, 96, 96, 0.599) !important;
+    font-size: 16px;
+    outline: #EF3C4F;
+    width: 85%;
+}
+.footer{
+    filter: brightness(20%);
+
+}
+.subscribe {
+    font-family: 'Poppins-Regular', Arial, sans-serif;
+    background: linear-gradient(to left, rgb(220, 40, 118), rgb(242, 86, 62));
+    padding: 18px;
+    margin-top: 10px !important;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    width: 85%;
+    margin: 0 auto;
+}
+.subscribe a {
+    color: var(--white);
+    text-decoration: none;
+}
+.trademark {
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.trademark span{
+    color: white;
+}
+.container{
+    max-width: 90%;
+}
+  
