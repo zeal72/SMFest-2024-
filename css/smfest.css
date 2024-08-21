@@ -10,7 +10,7 @@ body{
   }
   
 .header{
-    height: 90vh;
+    height: 100vh;
     position: relative;
 }
 .header::before{
@@ -172,6 +172,22 @@ body{
         letter-spacing: -7px;
     }
     
+    .slider-nav2a {
+        position: absolute;
+        width: 100%;
+        top: 59%;
+        left: 90% !important;
+        background-color: #e40a41;
+        border-radius: 50px;
+        max-width: 38px;
+        height: 38px;
+        padding-top: 5px;
+        padding-left: 11px;
+        transform: translateY(-50%);
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+    }
     .yrs1{
         font-weight: 700;
         font-size: 14px !important;
@@ -216,12 +232,6 @@ body{
         letter-spacing: 5px;
         font-weight: 700;
     } 
-    /* .yrs{
-        font-size: 16px;
-        position: absolute;
-        min-width: 100%;
-        bottom: 6px;
-    } */
     .fave p{
         font-size: 13px;
         font-weight: 600;
@@ -230,6 +240,11 @@ body{
         margin-left: 25px;
         padding: 15px 45px !important;
         margin-top: 15px !important;
+    }
+    .slider-wrappera{
+        position: relative;
+        max-width: 88rem;
+        padding-right: 0px !important; 
     }
 
 }
@@ -332,13 +347,13 @@ body{
 @media only screen and (min-width: 768px){
     
 .footer-content{
-    margin-bottom: 30px;
-    padding-bottom: 15%;
+    margin-bottom: 35px;
+    padding-bottom: 12%;
     border-bottom: 1px solid rgb(52, 50, 50);
 }
-    .third-section{
+ .third-section{
         margin-top: 200% !important;
-    }
+ }
     
 .exhibit{
     font-weight: 800;
@@ -667,8 +682,10 @@ body{
 }
 
 .slider-wrappera {
+  
     position: relative;
-    margin: 0 auto;
+    max-width: 88rem;
+    padding-right: 35px; 
 }
 
 .slidera {
@@ -709,7 +726,7 @@ body{
     position: absolute;
     width: 100%;
     top: 60%;
-    left: 96%;
+    left: 93%;
     background-color: #e40a41;
     border-radius: 50px;
     max-width: 38px;
