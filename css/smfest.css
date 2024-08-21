@@ -144,7 +144,11 @@ body{
     color: white;
 }
 @media only screen and (max-width: 768px){
-
+    .circle{
+        border-radius: 50px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
         .conference{
             font-size: 13px;
             font-weight: 600 !important;
