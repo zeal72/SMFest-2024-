@@ -148,6 +148,7 @@ body{
         border-radius: 50px !important;
         padding-left: 10px;
         padding-right: 10px;
+        padding-top: 10px;
     }
         .conference{
             font-size: 13px;
