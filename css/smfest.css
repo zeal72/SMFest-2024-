@@ -271,7 +271,6 @@ body{
         max-width: 88rem;
         padding-right: 0px !important; 
     }
-
 }
 .first-sec{
     border: 4px solid #EE2F5B;
@@ -887,14 +886,6 @@ p .pink {
     font-family: 'ClashDisplay-Bold', Arial, sans-serif;
     font-weight: 700 !important;
     margin-top: 38px !important;
-}
-.hash {
-    position: absolute;
-    top: 110px;
-    font-weight: 900 !important;
-    left: 275px;
-    font-size: 12px;
-    font-weight: 100;
 }
 .buy-ticket {
     border: 1px solid white !important;
