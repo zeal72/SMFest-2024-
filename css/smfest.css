@@ -26,6 +26,23 @@ body{
     position: relative;
     z-index: 2;
 }
+.start-button{
+    width: 3.4%; 
+    color: white;
+    height: 53px !important;
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    position: sticky;
+    top: 680px; 
+    z-index: 1;
+    left:95%;
+}
+.start-button i{
+    font-size: 15px;
+    font-weight: 800;
+}
 .nav-list{
     list-style-type: none;
     gap:45px;
